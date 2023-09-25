@@ -1,5 +1,73 @@
 /* Add these media queries at the end of your existing CSS */
 
+/* For screens with a maximum width of 180px */
+@media screen and (max-width: 180px) {
+  /* Adjust the profile section height and margin */
+  #profile {
+    height: auto; /* Remove fixed height */
+    margin-bottom: 1rem;
+  }
+
+  /* Wrap the about containers */
+  .about-containers {
+    flex-wrap: wrap;
+  }
+
+  /* Hide the desktop navigation */
+  #desktop-nav {
+    display: none;
+  }
+
+  /* Show the hamburger menu */
+  #hamburger-nav {
+    display: flex;
+  }
+
+  /* Change profile and section container to block display */
+  #profile,
+  .section-container {
+    display: block;
+  }
+
+  /* Hide the arrow icon */
+  .arrow {
+    display: none;
+  }
+
+  /* Set the section height to fit content */
+  section,
+  .section-container {
+    height: fit-content;
+  }
+
+  /* Add margin to sections */
+  section {
+    margin: 0 1rem;
+  }
+
+  /* Adjust the profile picture container */
+  .section__pic-container {
+    width: auto;
+    height: 40vw;
+    justify-content: center;
+  }
+
+  /* Decrease font size for section__text__p2 */
+  .section__text__p2 {
+    font-size: 1rem;
+  }
+
+  /* Decrease font size for title and justify text in text container */
+  .title {
+    font-size: 1.5rem;
+    text-align: center;
+  }
+
+  .text-container {
+    text-align: justify;
+  }
+}
+
 /* For screens with a maximum width of 1400px */
 @media screen and (max-width: 1400px) {
   /* Adjust the profile section height and margin */
@@ -51,7 +119,7 @@
 
   /* Add margin to sections */
   section {
-    margin: 0 6%;
+    margin: 0 1rem;
   }
 
   /* Adjust the profile picture container */
@@ -59,6 +127,7 @@
     width: 275px;
     height: 275px;
     margin: 0 auto 2rem;
+    justify-content:center;
   }
 
   /* Remove margin-top for about containers */
@@ -73,6 +142,15 @@
   #contact,
   footer {
     height: auto;
+  }
+
+  .skill {
+    min-width: 100%; /* Make each skill card full width on small screens */
+  }
+
+  .skill p {
+    font-size: 0.9rem; /* Decrease font size for better readability */
+    max-height: none; /* Remove max height to display full text */
   }
 
   /* Adjust profile section height and margin */
@@ -112,7 +190,7 @@
 
   /* Decrease font size for experience sub-title */
   .experience-sub-title {
-    font-size: 1.25rem;
+    font-size: 1rem;
   }
 
   /* Decrease font size for logo */
@@ -136,12 +214,13 @@
 
   /* Decrease font size for section__text__p2 */
   .section__text__p2 {
-    font-size: 1.25rem;
+    font-size: 1rem;
   }
 
   /* Decrease font size for title and justify text in text container */
   .title {
-    font-size: 2rem;
+    font-size: 1.5rem;
+    text-align: center;
   }
 
   .text-container {
@@ -149,4 +228,35 @@
   }
 }
 
-/* Additional media queries can be added for smaller screens if needed */
+@media screen and (max-width: 248px) {
+  .project-description {
+    /* Decrease font size for better fit */
+    max-height: 5rem; /* Adjust the maximum height as needed */
+  }
+}
+
+@media screen and (max-width: 232px) {
+  .project-description {
+     /* Decrease font size for better fit */
+    max-height: 5rem; /* Adjust the maximum height as needed */
+  }
+}
+
+@media screen and (max-width: 197px) {
+  .project-description {
+     /* Decrease font size for better fit */
+    max-height: 5rem; /* Adjust the maximum height as needed */
+  }
+}
+@media screen and (max-width: 182px) {
+  .project-description {
+    /* Decrease font size for better fit */
+    max-height: 5rem; /* Adjust the maximum height as needed */
+  }
+}
+@media screen and (max-width: 100px) {
+  .project-description {
+    /* Decrease font size for better fit */
+    max-height: 5rem; /* Adjust the maximum height as needed */
+  }
+}

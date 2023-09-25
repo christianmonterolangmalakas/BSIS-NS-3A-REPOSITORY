@@ -77,9 +77,8 @@ a:hover {
 }
 
 .logo {
-  font-size: 2rem;
-  color:darkblue;
-
+  font-size: 3rem;
+  color:white;
 }
 
 .logo:hover {
@@ -198,7 +197,7 @@ section {
   width: 400px;
   margin-bottom: 20px;
   transition: all .3 ease-in-out;
-  
+  justify-content: center;
 }
 .section__pic-container:hover {
   height: 450px;
@@ -220,6 +219,35 @@ section {
 .section__text__p2 {
   font-size: 1.75rem;
   margin-bottom: 1rem;
+}
+/* Profile Section */
+#profile .title,
+#profile .section__text__p1 {
+  color: #1c2833; /* Dark blue text color for the "Profile" section */
+}
+
+/* Skills Section */
+#skills .title,
+#skills .section__text__p1 {
+  color: #2c3e50; /* Darker blue text color for the "Skills" section */
+}
+
+/* Experience Section */
+#experience .title,
+#experience .section__text__p1 {
+  color: #34495e; /* Darker blue-gray text color for the "Experience" section */
+}
+
+/* Projects Section */
+#projects .title,
+#projects .section__text__p1 {
+  color: #8e44ad; /* Purple text color for the "Projects" section */
+}
+
+/* Contact Section */
+#contact .title,
+#contact .section__text__p1 {
+  color: #c0392b; /* Dark red text color for the "Contact" section */
 }
 
 .title {
@@ -492,9 +520,9 @@ article .icon {
 
 .project-description {
   font-size: 1rem;
-  color: rgb(85, 85, 85);
+  color: black;
   overflow: hidden;
-  max-height: 3rem; /* Adjust this value as needed */
+  max-height: 20rem; /* Adjust this value as needed */
 }
 
 
@@ -542,7 +570,16 @@ article .icon {
 .email-icon {
   height: 2.5rem;
 }
+.email-icon:hover{
+   transform: scale(1.10);
+}
 
+.facebook-icon:hover{
+     transform: scale(1.10);
+}
+.insta-icon:hover{
+     transform: scale(1.10);
+}
 /* Footer */
 
 footer {
