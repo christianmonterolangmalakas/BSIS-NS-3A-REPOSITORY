@@ -1,120 +1,145 @@
+/* Add these media queries at the end of your existing CSS */
+
+/* For screens with a maximum width of 1400px */
 @media screen and (max-width: 1400px) {
+  /* Adjust the profile section height and margin */
   #profile {
-    height: 83vh;
-    margin-bottom: 6rem;
+    height: auto; /* Remove fixed height */
+    margin-bottom: 2rem;
   }
 
+  /* Wrap the about containers */
   .about-containers {
     flex-wrap: wrap;
   }
 }
 
+/* For screens with a maximum width of 1200px */
 @media screen and (max-width: 1200px) {
+  /* Hide the desktop navigation */
   #desktop-nav {
     display: none;
   }
 
+  /* Show the hamburger menu */
   #hamburger-nav {
     display: flex;
   }
 
+  /* Add margin to experience section */
   #experience,
   .experience-details-container {
     margin-top: 2rem;
   }
 
+  /* Change profile and section container to block display */
   #profile,
   .section-container {
     display: block;
   }
 
+  /* Hide the arrow icon */
   .arrow {
     display: none;
   }
 
+  /* Set the section height to fit content */
   section,
   .section-container {
     height: fit-content;
   }
 
+  /* Add margin to sections */
   section {
     margin: 0 6%;
   }
 
+  /* Adjust the profile picture container */
   .section__pic-container {
     width: 275px;
     height: 275px;
     margin: 0 auto 2rem;
   }
 
+  /* Remove margin-top for about containers */
   .about-containers {
     margin-top: 0;
   }
 }
 
-
-
-
+/* For screens with a maximum width of 600px */
 @media screen and (max-width: 600px) {
+  /* Increase the height of the contact section and footer */
   #contact,
   footer {
-    height: 40vh;
-    
+    height: auto;
   }
 
+  /* Adjust profile section height and margin */
   #profile {
-    height: 83vh;
+    height: auto; /* Remove fixed height */
     margin-bottom: 0;
   }
 
+  /* Decrease the font size of articles */
   article {
     font-size: 1rem;
   }
 
+  /* Adjust the footer navigation */
   footer nav {
     height: fit-content;
     margin-bottom: 2rem;
   }
 
+  /* Wrap about containers, contact info, and buttons */
   .about-containers,
   .contact-info-upper-container,
   .btn-container {
     flex-wrap: wrap;
   }
 
+  /* Adjust the contact info container margin */
   .contact-info-container {
     margin: 0;
   }
 
+  /* Decrease font size for contact info and navigation links */
   .contact-info-container p,
   .nav-links li a {
     font-size: 1rem;
   }
 
+  /* Decrease font size for experience sub-title */
   .experience-sub-title {
     font-size: 1.25rem;
   }
 
+  /* Decrease font size for logo */
   .logo {
     font-size: 1.5rem;
   }
 
+  /* Change the direction of navigation links */
   .nav-links {
     flex-direction: column;
     gap: 0.5rem;
     text-align: center;
   }
 
+  /* Adjust the profile picture container */
   .section__pic-container {
     width: auto;
     height: 46vw;
     justify-content: center;
   }
 
+  /* Decrease font size for section__text__p2 */
   .section__text__p2 {
     font-size: 1.25rem;
   }
 
+  /* Decrease font size for title and justify text in text container */
   .title {
     font-size: 2rem;
   }
@@ -123,3 +148,5 @@
     text-align: justify;
   }
 }
+
+/* Additional media queries can be added for smaller screens if needed */

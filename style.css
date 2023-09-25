@@ -4,13 +4,17 @@
 * {
   margin: 0;
   padding: 0;
+  scroll-behavior: smooth;
+  transition: all 0.5s ease-in-out;
 }
 
 body {
     font-family: "Poppins", sans-serif;
     background-color:mediumaquamarine;
 }
-
+.logo{
+  color:darkblue;
+}
 html {
   scroll-behavior: smooth;
 }
@@ -43,17 +47,26 @@ nav {
   font-size: 1.5rem;
 }
 
+
+
+
+
 a {
-  color: black;
+  color:maroon;
   text-decoration: none;
   text-decoration-color: white;
+  transition: transform 0.3s ease;
+
 }
 
+
+
 a:hover {
-  color: gray;
+  color:darkgreen;
   text-decoration: underline;
   text-underline-offset: 1rem;
-  text-decoration-color: rgb(181, 181, 181);
+  text-decoration-color:#ffd41e;
+    transform: scale(1.05);
 }
 
 .logo {
@@ -170,12 +183,18 @@ section {
 
 .section__pic-container {
   display: flex;
+  margin: auto 0;
   height: 400px;
   width: 400px;
-  margin: auto 0;
+  margin-bottom: 20px;
+  
+  transition: all .3 ease-in-out;
   
 }
-
+.section__pic-container:hover {
+  height: 500px;
+  width: 400px;
+}
 .section__text {
   align-self: center;
   text-align: center;
@@ -204,8 +223,12 @@ section {
   justify-content: center;
   margin-top: 1rem;
   gap: 1rem;
-}
+  transition: transform 0.3s ease;
 
+}
+#socials-container:hover{
+   transform: scale(1.05);
+}
 /*Icon*/
 
 .icon {
@@ -232,6 +255,7 @@ section {
 .btn-color-1,
 .btn-color-2 {
   border: rgb(53, 53, 53) 0.1rem solid;
+  transition: box-shadow .5s ease-in-out;
 }
 
 .btn-color-1:hover,
@@ -242,11 +266,11 @@ section {
 .btn-color-1,
 .btn-color-2:hover {
   background: rgb(53, 53, 53);
-  color: white;
+  box-shadow: 0 0 30px 5px #ffd41e;
 }
 
 .btn-color-1:hover {
-  background: rgb(0, 0, 0);
+   box-shadow: 0 0 30px 5px #ffd41e;
 }
 
 .btn-color-2 {
@@ -255,6 +279,7 @@ section {
 
 .btn-color-2:hover {
   border: rgb(255, 255, 255) 0.1rem solid;
+  
 }
 
 .btn-container {
@@ -295,8 +320,11 @@ section {
   border: rgb(53, 53, 53) 0.1rem solid;
   border-color: rgb(163, 163, 163);
   text-align: center;
+  transition: transform 0.3s ease;
 }
-
+.details-container:hover {
+  transform: scale(1.05);
+}
 .section-container {
   gap: 4rem;
   height: 75%;
@@ -458,36 +486,38 @@ article .icon {
 
 
 /* Contact Section */
+
 #contact {
   display: flex;
-  justify-content: center;
   flex-direction: column;
-  height: 150vh;
+  align-items: center;
+  text-align: center;
+  padding: 4rem 0;
+  min-height: 50vh; /* Adjust the minimum height as needed */
 }
 
 .contact-info-upper-container {
   display: flex;
+  flex-wrap: wrap;
   justify-content: center;
+  gap: 2rem;
+  max-width: 1200px;
+  margin: 2rem auto;
+  padding: 2rem;
+  background: rgba(255, 255, 255, 0.2); /* Add a subtle background color */
   border-radius: 2rem;
-  border: rgb(163, 163, 163) 0.1rem solid;
-  border-color: rgb(163, 163, 163);
-  background: rgb(250, 250, 250);
-  margin: 2rem;
-  padding: 0.5rem;
-
-  
+  box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.2); /* Add a subtle shadow */
 }
 
 .contact-info-container {
   display: flex;
   align-items: center;
-  justify-content: center;
   gap: 0.5rem;
   margin: 1rem;
 }
 
 .contact-info-container p {
-  font-size: larger;
+  font-size: 1.25rem; /* Increase font size for better readability */
 }
 
 .contact-icon {
@@ -501,8 +531,8 @@ article .icon {
 /* Footer */
 
 footer {
-  height: -20vh;
-  margin: 0 1 rem;
+  height: auto;
+  margin: 2rem 1rem; /* Add margin to the footer */
 }
 
 footer p {
