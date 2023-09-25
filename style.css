@@ -12,9 +12,7 @@ body {
     font-family: "Poppins", sans-serif;
     background-color:mediumaquamarine;
 }
-.logo{
-  color:darkblue;
-}
+
 html {
   scroll-behavior: smooth;
 }
@@ -33,6 +31,10 @@ a,
 nav,
 .nav-links {
   display: flex;
+   background-color: #3498db; /* Change the background color to your desired color */
+  color: #ffffff; /* Change the font color to white or your desired color */
+  font-family: Arial, sans-serif; /* Change the font family to your desired font */
+  padding: 20px; /* Add padding to the header for spacing */
 }
 
 nav {
@@ -45,14 +47,19 @@ nav {
   gap: 2rem;
   list-style: none;
   font-size: 1.5rem;
+   color: #ffffff; /* Change the font color of the navigation links */
+  text-decoration: none;
 }
 
 
-
+.nav-links a:hover {
+  color: #ffd41e; /* Change the font color on hover to a different color */
+  text-decoration: underline;
+}
 
 
 a {
-  color:maroon;
+  color: #ffffff;
   text-decoration: none;
   text-decoration-color: white;
   transition: transform 0.3s ease;
@@ -71,6 +78,8 @@ a:hover {
 
 .logo {
   font-size: 2rem;
+  color:darkblue;
+
 }
 
 .logo:hover {
@@ -177,7 +186,8 @@ section {
   display: flex;
   justify-content: center;
   gap: 5rem;
-  height: 80vh;
+  height: 100vh;
+  background-color: lightblue;
   
 }
 
@@ -187,12 +197,11 @@ section {
   height: 400px;
   width: 400px;
   margin-bottom: 20px;
-  
   transition: all .3 ease-in-out;
   
 }
 .section__pic-container:hover {
-  height: 500px;
+  height: 450px;
   width: 400px;
 }
 .section__text {
@@ -290,6 +299,7 @@ section {
 
 #about {
   position: relative;
+  background-color: lightgreen;
 }
 
 .about-containers {
@@ -348,6 +358,7 @@ section {
   align-items: center;
   text-align: center;
   padding: 4rem 0;
+  background-color: lightcoral;
 }
 
 .skills-container {
@@ -388,6 +399,7 @@ section {
 
 #experience {
   position: relative;
+  background-color: lightpink;
 }
 
 .experience-sub-title {
@@ -432,8 +444,9 @@ article .icon {
   background: white;
   padding: 4rem 0;
   text-align: center;
-  min-height:230vh
-  
+  min-height: 230vh;
+  background-color: lightsalmon;
+  color: #000000; /* Project section text color */
 }
 
 .project-card-container {
@@ -455,6 +468,7 @@ article .icon {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
+  color: #000000; /* Text color for project cards */
 }
 
 .project-card:hover {
@@ -473,7 +487,7 @@ article .icon {
 .project-title {
   font-size: 1.5rem;
   margin-bottom: 0.5rem;
-  color: black;
+  color: #000000; /* Project title text color */
 }
 
 .project-description {
@@ -494,6 +508,7 @@ article .icon {
   text-align: center;
   padding: 4rem 0;
   min-height: 50vh; /* Adjust the minimum height as needed */
+  background-color: lightseagreen;
 }
 
 .contact-info-upper-container {
