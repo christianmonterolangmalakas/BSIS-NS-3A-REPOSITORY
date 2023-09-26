@@ -9,8 +9,11 @@
 }
 
 body {
-    font-family: "Poppins", sans-serif;
-    background-color:mediumaquamarine;
+  font-family: "Poppins", sans-serif;
+  background-color: mediumaquamarine;
+   scroll-behavior: smooth;
+ 
+ 
 }
 
 html {
@@ -31,9 +34,9 @@ a,
 nav,
 .nav-links {
   display: flex;
-   background-color: #3498db; /* Change the background color to your desired color */
+  background-color: #3498db; /* Change the background color to your desired color */
   color: #ffffff; /* Change the font color to white or your desired color */
-  font-family: Arial, sans-serif; /* Change the font family to your desired font */
+  font-family:Verdana, Geneva, Tahoma, sans-serif; /* Change the font family to your desired font */
   padding: 20px; /* Add padding to the header for spacing */
 }
 
@@ -47,38 +50,33 @@ nav {
   gap: 2rem;
   list-style: none;
   font-size: 1.5rem;
-   color: #ffffff; /* Change the font color of the navigation links */
+  color: #ffffff; /* Change the font color of the navigation links */
   text-decoration: none;
 }
-
 
 .nav-links a:hover {
   color: #ffd41e; /* Change the font color on hover to a different color */
   text-decoration: underline;
 }
 
-
 a {
   color: #ffffff;
   text-decoration: none;
   text-decoration-color: white;
   transition: transform 0.3s ease;
-
 }
 
-
-
 a:hover {
-  color:darkgreen;
+  color: darkgreen;
   text-decoration: underline;
   text-underline-offset: 1rem;
-  text-decoration-color:#ffd41e;
-    transform: scale(1.05);
+  text-decoration-color: #ffd41e;
+  transform: scale(1.05);
 }
 
 .logo {
   font-size: 3rem;
-  color:white;
+  color: white;
 }
 
 .logo:hover {
@@ -187,7 +185,6 @@ section {
   gap: 5rem;
   height: 100vh;
   background-color: lightblue;
-  
 }
 
 .section__pic-container {
@@ -196,7 +193,7 @@ section {
   height: 400px;
   width: 400px;
   margin-bottom: 20px;
-  transition: all .3 ease-in-out;
+  transition: all 0.3 ease-in-out;
   justify-content: center;
 }
 .section__pic-container:hover {
@@ -224,30 +221,35 @@ section {
 #profile .title,
 #profile .section__text__p1 {
   color: #1c2833; /* Dark blue text color for the "Profile" section */
+  font-family: 'Poppins', sans-serif;
 }
 
 /* Skills Section */
 #skills .title,
 #skills .section__text__p1 {
   color: #2c3e50; /* Darker blue text color for the "Skills" section */
+ font-family: 'Poppins', sans-serif; 
 }
 
 /* Experience Section */
 #experience .title,
 #experience .section__text__p1 {
   color: #34495e; /* Darker blue-gray text color for the "Experience" section */
+ font-family: 'Poppins', sans-serif; 
 }
 
 /* Projects Section */
 #projects .title,
 #projects .section__text__p1 {
   color: #8e44ad; /* Purple text color for the "Projects" section */
+ font-family: 'Poppins', sans-serif; 
 }
 
 /* Contact Section */
 #contact .title,
 #contact .section__text__p1 {
   color: #c0392b; /* Dark red text color for the "Contact" section */
+ font-family: 'Poppins', sans-serif; 
 }
 
 .title {
@@ -261,10 +263,9 @@ section {
   margin-top: 1rem;
   gap: 1rem;
   transition: transform 0.3s ease;
-
 }
-#socials-container:hover{
-   transform: scale(1.05);
+#socials-container:hover {
+  transform: scale(1.05);
 }
 /*Icon*/
 
@@ -292,7 +293,7 @@ section {
 .btn-color-1,
 .btn-color-2 {
   border: rgb(53, 53, 53) 0.1rem solid;
-  transition: box-shadow .5s ease-in-out;
+  transition: box-shadow 0.5s ease-in-out;
 }
 
 .btn-color-1:hover,
@@ -307,7 +308,7 @@ section {
 }
 
 .btn-color-1:hover {
-   box-shadow: 0 0 30px 5px #ffd41e;
+  box-shadow: 0 0 30px 5px #ffd41e;
 }
 
 .btn-color-2 {
@@ -316,7 +317,6 @@ section {
 
 .btn-color-2:hover {
   border: rgb(255, 255, 255) 0.1rem solid;
-  
 }
 
 .btn-container {
@@ -328,6 +328,7 @@ section {
 #about {
   position: relative;
   background-color: lightgreen;
+ 
 }
 
 .about-containers {
@@ -387,6 +388,7 @@ section {
   text-align: center;
   padding: 4rem 0;
   background-color: lightcoral;
+  position: relative; /* Add this line */
 }
 
 .skills-container {
@@ -396,6 +398,7 @@ section {
   gap: 2rem;
   max-width: 1200px;
   margin-top: 2rem;
+  position: relative; /* Add this line */
 }
 
 .skill {
@@ -407,6 +410,7 @@ section {
   border-radius: 2rem;
   text-align: center;
   transition: transform 0.3s ease;
+   position: relative; /* Add this line */
 }
 
 .skill:hover {
@@ -422,7 +426,12 @@ section {
   font-size: 1rem;
   color: rgb(85, 85, 85);
 }
-
+.arrow-container {
+  position: absolute;
+  left: -5rem; /* Adjust the left position as needed */
+  top: 50%; /* Position it vertically in the middle */
+  transform: translateY(-50%); /* Vertically center the arrow */
+}
 /* Experience Section */
 
 #experience {
@@ -462,7 +471,13 @@ article {
 article .icon {
   position: relative;
 }
-
+.text-container{
+ 
+  color: black;
+margin-left: 10px;
+margin-right: 10px;
+  min-height: 7rem; 
+}
 /* Projects Section */
 
 /* Projects Section */
@@ -525,8 +540,6 @@ article .icon {
   max-height: 20rem; /* Adjust this value as needed */
 }
 
-
-
 /* Contact Section */
 
 #contact {
@@ -570,15 +583,15 @@ article .icon {
 .email-icon {
   height: 2.5rem;
 }
-.email-icon:hover{
-   transform: scale(1.10);
+.email-icon:hover {
+  transform: scale(1.1);
 }
 
-.facebook-icon:hover{
-     transform: scale(1.10);
+.facebook-icon:hover {
+  transform: scale(1.1);
 }
-.insta-icon:hover{
-     transform: scale(1.10);
+.insta-icon:hover {
+  transform: scale(1.1);
 }
 /* Footer */
 
@@ -589,4 +602,5 @@ footer {
 
 footer p {
   text-align: center;
+  font-family:Georgia, 'Times New Roman', Times, serif
 }
