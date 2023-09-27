@@ -1,9 +1,9 @@
-// Smooth scrolling to sections
+
 document.addEventListener("DOMContentLoaded", function () {
   const navLinks = document.querySelectorAll(".nav-links a, .menu-links a");
   const arrowIcon = document.querySelector(".arrow");
 
-  // Add click event listeners to navigation links
+  
   navLinks.forEach(function (link) {
     link.addEventListener("click", function (e) {
       e.preventDefault();
@@ -20,7 +20,7 @@ document.addEventListener("DOMContentLoaded", function () {
     });
   });
 
-  // Add click event listener to arrow icon
+  
   if (arrowIcon) {
     arrowIcon.addEventListener("click", function () {
       const targetId = this.getAttribute("onclick").split("'")[1];
@@ -36,7 +36,7 @@ document.addEventListener("DOMContentLoaded", function () {
   }
 });
 
-// Hover effects for project cards
+
 const projectCards = document.querySelectorAll(".project-card");
 
 projectCards.forEach(function (card) {
@@ -50,7 +50,7 @@ projectCards.forEach(function (card) {
   });
 });
 
-// Animations or transitions for elements (Example: Navbar background color change on scroll)
+
 window.addEventListener("scroll", function () {
   const nav = document.querySelector("nav");
   if (window.scrollY > 50) {

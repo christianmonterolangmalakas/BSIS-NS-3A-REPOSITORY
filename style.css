@@ -11,9 +11,7 @@
 body {
   font-family: "Poppins", sans-serif;
   background-color: mediumaquamarine;
-   scroll-behavior: smooth;
- 
- 
+  scroll-behavior: smooth;
 }
 
 html {
@@ -36,7 +34,7 @@ nav,
   display: flex;
   background-color: #3498db; /* Change the background color to your desired color */
   color: #ffffff; /* Change the font color to white or your desired color */
-  font-family:Verdana, Geneva, Tahoma, sans-serif; /* Change the font family to your desired font */
+  font-family: Verdana, Geneva, Tahoma, sans-serif; /* Change the font family to your desired font */
   padding: 20px; /* Add padding to the header for spacing */
 }
 
@@ -221,35 +219,35 @@ section {
 #profile .title,
 #profile .section__text__p1 {
   color: #1c2833; /* Dark blue text color for the "Profile" section */
-  font-family: 'Poppins', sans-serif;
+  font-family: "Poppins", sans-serif;
 }
 
 /* Skills Section */
 #skills .title,
 #skills .section__text__p1 {
   color: #2c3e50; /* Darker blue text color for the "Skills" section */
- font-family: 'Poppins', sans-serif; 
+  font-family: "Poppins", sans-serif;
 }
 
 /* Experience Section */
 #experience .title,
 #experience .section__text__p1 {
   color: #34495e; /* Darker blue-gray text color for the "Experience" section */
- font-family: 'Poppins', sans-serif; 
+  font-family: "Poppins", sans-serif;
 }
 
 /* Projects Section */
 #projects .title,
 #projects .section__text__p1 {
   color: #8e44ad; /* Purple text color for the "Projects" section */
- font-family: 'Poppins', sans-serif; 
+  font-family: "Poppins", sans-serif;
 }
 
 /* Contact Section */
 #contact .title,
 #contact .section__text__p1 {
   color: #c0392b; /* Dark red text color for the "Contact" section */
- font-family: 'Poppins', sans-serif; 
+  font-family: "Poppins", sans-serif;
 }
 
 .title {
@@ -328,7 +326,6 @@ section {
 #about {
   position: relative;
   background-color: lightgreen;
- 
 }
 
 .about-containers {
@@ -398,7 +395,7 @@ section {
   gap: 2rem;
   max-width: 1200px;
   margin-top: 2rem;
-  position: relative; /* Add this line */
+  position: relative; 
 }
 
 .skill {
@@ -410,7 +407,7 @@ section {
   border-radius: 2rem;
   text-align: center;
   transition: transform 0.3s ease;
-   position: relative; /* Add this line */
+  position: relative; 
 }
 
 .skill:hover {
@@ -428,9 +425,9 @@ section {
 }
 .arrow-container {
   position: absolute;
-  left: -5rem; /* Adjust the left position as needed */
-  top: 50%; /* Position it vertically in the middle */
-  transform: translateY(-50%); /* Vertically center the arrow */
+  left: -5rem; 
+  top: 50%; 
+  transform: translateY(-50%); 
 }
 /* Experience Section */
 
@@ -471,12 +468,11 @@ article {
 article .icon {
   position: relative;
 }
-.text-container{
- 
+.text-container {
   color: black;
-margin-left: 10px;
-margin-right: 10px;
-  min-height: 7rem; 
+  margin-left: 10px;
+  margin-right: 10px;
+  min-height: 7rem;
 }
 /* Projects Section */
 
@@ -489,7 +485,7 @@ margin-right: 10px;
   text-align: center;
   min-height: 230vh;
   background-color: lightsalmon;
-  color: #000000; /* Project section text color */
+  color: #000000; 
 }
 
 .project-card-container {
@@ -507,11 +503,11 @@ margin-right: 10px;
   padding: 1.5rem;
   text-align: center;
   transition: transform 0.3s ease;
-  height: 100%; /* Make each card the same height */
+  height: 100%; 
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  color: #000000; /* Text color for project cards */
+  color: #000000; 
 }
 
 .project-card:hover {
@@ -530,14 +526,14 @@ margin-right: 10px;
 .project-title {
   font-size: 1.5rem;
   margin-bottom: 0.5rem;
-  color: #000000; /* Project title text color */
+  color: #000000; 
 }
 
 .project-description {
   font-size: 1rem;
   color: black;
   overflow: hidden;
-  max-height: 20rem; /* Adjust this value as needed */
+  max-height: 20rem; 
 }
 
 /* Contact Section */
@@ -548,7 +544,7 @@ margin-right: 10px;
   align-items: center;
   text-align: center;
   padding: 4rem 0;
-  min-height: 50vh; /* Adjust the minimum height as needed */
+  min-height: 50vh; 
   background-color: lightseagreen;
 }
 
@@ -602,5 +598,5 @@ footer {
 
 footer p {
   text-align: center;
-  font-family:Georgia, 'Times New Roman', Times, serif
+  font-family: Georgia, "Times New Roman", Times, serif;
 }
