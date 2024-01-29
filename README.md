@@ -1,7 +1,7 @@
 # My Portfolio
-My Portfolio Website
-## Some Images of My Portfolio React Js Website:
+My Portfolio ReactJs Website, This is also responsive
 
+## Some Images of My Portfolio React Js Website:
 <img width="450px;" src="https://i.imgur.com/gV102NO.png"/>
 <img width="450px;" src="https://i.imgur.com/lC2wgam.png"/>
 <img width="450px;" src="https://i.imgur.com/cLRcTI6.png"/>
