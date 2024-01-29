@@ -8,6 +8,5 @@ My Portfolio Website
 <img width="450px;" src="https://i.imgur.com/hoqmd4k.png"/>
 <img width="450px;" src="https://i.imgur.com/2pGGGf6.png"/>
 <img width="450px;" src="https://i.imgur.com/nSFw9tG.png"/>
-<img width="450px;" src="https://i.imgur.com/nSFw9tG.png"/>
 <img width="450px;" src="https://i.imgur.com/CVUUr0J.png"/>
 <img width="450px;" src="https://i.imgur.com/Nisv4gD.png"/>
