@@ -10,3 +10,8 @@ My Portfolio Website
 <img width="450px;" src="https://i.imgur.com/nSFw9tG.png"/>
 <img width="450px;" src="https://i.imgur.com/CVUUr0J.png"/>
 <img width="450px;" src="https://i.imgur.com/Nisv4gD.png"/>
+
+TO RUN THE CODE: 
+1ST STEP: cd gg
+2ND STEP: npm install
+3RD STEP: npm start
