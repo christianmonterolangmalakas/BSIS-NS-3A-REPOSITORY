@@ -1,0 +1,394 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Christian Montero Portfolio</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="mediaqueries.css" />
+  </head>
+  <body>
+    <nav id="desktop-nav">
+      <div class="logo">My Portfolio</div>
+      <div>
+        <ul class="nav-links">
+          <li><a href="#profile">Home</a></li>
+           <li><a href="#about">About</a></li>
+          <li><a href="#skills">Skills</a></li>
+          <li><a href="#experience">Experience</a></li>
+          <li><a href="#projects">Projects</a></li>
+          <li><a href="#contact">Contacts</a></li>
+        </ul>
+      </div>
+    </nav>
+    <nav id="hamburger-nav">
+      
+      <div class="logo">My Portfolio</div>
+      <div class="hamburger-menu">
+        <div class="hamburger-icon" onclick="toggleMenu()">
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
+        <div class="menu-links">
+           <li><a href="#profile" onclick="toggleMenu()">Home</a></li>
+          <li><a href="#about" onclick="toggleMenu()">About</a></li>
+          <li><a href="#skills" onclick="toggleMenu()">Skills</a></li>
+          <li><a href="#experience" onclick="toggleMenu()">Experience</a></li>
+          <li><a href="#projects" onclick="toggleMenu()">Projects</a></li>
+          <li><a href="#contact" onclick="toggleMenu()">Contacts</a></li>
+        </div>
+      </div>
+    </nav>
+    <section id="profile">
+      <div class="section__pic-container">
+        <img
+        src="./assets/pogiakodito.jpg"
+        alt="Profile picture" />
+      </div>
+      <div class="section__text">
+        <p class="section__text__p1">I would like to introduce myself</p>
+        <h1 class="title">Christian Montero</h1>
+        <p class="section__text__p2">Student</p>
+        <div class="btn-container">
+          <button
+            class="btn btn-color-2"
+            onclick="window.open('./assets/Montero_CV.pdf')"
+          >
+            My Resume
+          </button>
+          <button class="btn btn-color-1" onclick="location.href='./#contact'">
+            Contact Info
+          </button>
+        </div>
+        <div id="socials-container">
+          <img
+            src="./assets/linkedin.png"
+            alt="My LinkedIn"
+            class="icon"
+            onclick="location.href='https://www.linkedin.com/feed/?trk=homepage-basic_sign-in-submit'"
+          />
+          <img
+            src="./assets/github.png"
+            alt="My Github"
+            class="icon"
+            onclick="location.href='https://github.com/christianmonterolangmalakas'"
+          />
+        </div>
+        </div>
+      </div>
+    </section>
+    <section id="about">
+      <p class="section__text__p1">Get to Know More</p>
+      <h1 class="title">About Me</h1>
+      <div class="section-container">
+        <div class="section__pic-container">
+          <img
+            src="./assets/profile ko panget.jpg"
+            alt="About Picture"
+            class="about-pic"
+          />
+        </div>
+        <div class="about-details-container">
+          <div class="about-containers">
+            <div class="details-container">
+              <img
+                src="./assets/job.png"
+                alt="Experience icon"
+                class="icon"
+              />
+              <h3>Work Experience</h3>
+              <p>4  months <br />in Lazada (June-September 2023)</p>
+            </div>
+            <div class="details-container">
+              <img
+                src="./assets/education.png"
+                alt="Education icon"
+                class="icon"
+              />
+              <h3>Education</h3>
+              <p>
+                  Bachelor Of Science in Information System<br />
+                
+              </p>
+            </div>
+             <div class="details-container">
+              <img
+                src="./assets/home.png"
+                alt="Education icon"
+                class="icon"
+              />
+              <h3>Home</h3>
+              <p>
+              San Pedro City Laguna<br />
+                
+              </p>
+            </div>
+            
+          </div>
+          <div class="text-container">
+            <h>
+               Hello my name is Christian Layno Montero 21 years old Third Year College and I am a quiet guy who likes to spend with myself only (using my phone most of the time and playing basketball in our backyard) and I still don't know what to do in life once i graduated because this was not really my dream course.
+            </h>
+          </div>
+        </div>
+      </div>
+      <img
+        src="./assets/arrow.png"
+        alt="Arrow icon"
+        class="icon arrow"
+        onclick="location.href='./#experience'"
+      />
+    </section>
+   <section id="skills">
+  <p class="section__text__p1">My Expertise</p>
+  <h1 class="title">Skills</h1>
+  <div class="skills-container">
+    <div class="skill">
+      <h3>Writing</h3>
+      <p>
+        I can write a script about stories and I used to be a scriptwriter in our project in I.S Professional Electives where we made a short film about the depression of the student in the pandemic. I just love writing and I still create a script about horror films that my friend's project
+      </p>
+    </div>
+
+    <div class="skill">
+      <h3>Shooter</h3>
+      <p>
+       I am a basketball shooter and my friends call me "Stephen Curry" because of how great my shooting is. The reason for this is because I always practice my shooting on our court in our backyard.      </p>
+    </div>
+
+    
+  </div>
+   <img
+        src="./assets/arrow.png"
+        alt="Arrow icon"
+        class="icon arrow"
+        onclick="location.href='./#projects'"
+      />
+</section>
+
+
+    <section id="experience">
+      <p class="section__text__p1">Explore My</p>
+      <h1 class="title">Experience</h1>
+      <div class="experience-details-container">
+        <div class="about-containers">
+          <div class="details-container">
+            <h2 class="experience-sub-title">Programming languages</h2>
+            <div class="article-container">
+              <article>
+                <img
+                  src="./assets/Python-logo-notext.svg.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>Python</h3>
+                  <p>Basic</p>
+                </div>
+              </article>
+              <article>
+                <img
+                   src="./assets/c++.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>C++</h3>
+                  <p>Basic</p>
+                </div>
+              </article>
+              <article>
+                <img
+                   src="./assets/c language.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>c</h3>
+                  <p>Basic</p>
+                </div>
+              </article>
+              <article>
+                <img
+                  src="./assets/javascript.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>JavaScript</h3>
+                  <p>Basic</p>
+                </div>
+              </article>
+              <article>
+                <img
+                src="./assets/html.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>HTML</h3>
+                  <p>Basic</p>
+                </div>
+              </article>
+              <article>
+                <img
+                    src="./assets/css.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>CSS</h3>
+                  <p>Basic</p>
+                </div>
+              </article>
+            </div>
+          </div>
+          <div class="details-container">
+            <h2 class="experience-sub-title">As a worker in Lazada</h2>
+            <div class="article-container">
+              <article>
+                <img
+                   src="./assets/lifting boxes.jpeg"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>Lifting boxes</h3>
+                 
+                </div>
+              </article>
+              <article>
+                <img
+                    src="./assets/scanner.jpg"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>Scanner of parcel</h3>
+                 
+                </div>
+              </article>
+              <article>
+                <img
+                   src="./assets/tying a sack.jpeg"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>Tying a sack</h3>
+                 
+                </div>
+              </article>
+              <article>
+                <img
+                    src="./assets/jack clip.jpg"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>Mover of boxes by using pallet jack clip</h3>
+                
+                </div>
+              </article>
+            </div>
+          </div>
+        </div>
+      </div>
+      <img
+        src="./assets/arrow.png"
+        alt="Arrow icon"
+        class="icon arrow"
+        onclick="location.href='./#projects'"
+      />
+    </section>
+    <section id="projects">
+  <p class="section__text__p1">Look at</p>
+  <h1 class="title">Our Projects</h1>
+  <div class="project-card-container">
+  
+    <div class="project-card">
+      <img src="./assets/game dev first year.png" alt="Project 1" class="project-img" />
+      <h2 class="project-title">Project One (Computer Programming 1 First-Year College)</h2>
+      <p class="project-description">We created a game where you can create or draw everything by using those small box pixels. We used c/c++ language for creating that game.</p>
+    </div>
+
+ 
+    <div class="project-card">
+      <img src="./assets/atm machine.jpg" alt="Project 2" class="project-img" />
+      <h2 class="project-title">Project Two (Object Oriented Programming Second-Year College)</h2>
+      <p class="project-description">We created an atm machine with the use of GUI in python. </p>
+    </div>
+
+    
+    <div class="project-card">
+      <img src="./assets/hci website.png" alt="Project 3" class="project-img" />
+      <h2 class="project-title">Project Three (Human Computer Interface Second-Year College)</h2>
+      <p class="project-description">We created a school website in our Human Computer Interface subject with the use of html and css.</p>
+    </div>
+<div class="project-card">
+      <img src="./assets/vite react.jpg" alt="Project 3" class="project-img" />
+      <h2 class="project-title">Project Four (Application Development & Emerging Technologies Second-Year College)</h2>
+      <p class="project-description">We created a React App</p>
+    </div>
+
+  </div>
+</section>
+
+    <section id="contact">
+      <p class="section__text__p1">Get in Touch</p>
+      <h1 class="title">Contact Me</h1>
+      <div class="contact-info-upper-container">
+        <div class="contact-info-container">
+          <img
+            src="./assets/gmail-logo-240.png"
+            alt="Email icon"
+            class="icon contact-icon email-icon"
+          />
+          <p><a href="https://mail.google.com/mail/u/0/#inbox">christian123montero@gmail.com</p>
+        </div>
+        <div class="contact-info-container">
+          <img
+            src="./assets/linkedin.png"
+            alt="LinkedIn icon"
+            class="icon contact-icon "
+          />
+          <p><a href="https://www.linkedin.com/in/christian-montero-829a47237/">christianopogito123@gmail.com</a></p>
+        </div>
+        <div class="contact-info-container">
+          <img
+            src="./assets/facebook-circle-logo-240.png"
+            alt="Facebook icon"
+            class="icon contact-icon facebook-icon"
+          />
+          <p><a href="https://www.facebook.com/christian.montero.12576">Christian Montero</a></p>
+        </div>
+         <div class="contact-info-container">
+          <img
+            src="./assets/instagram-logo-240.png"
+            alt="insta icon"
+            class="icon contact-icon insta-icon"
+          />
+          <p><a href="https://www.instagram.com/christkanimic/?hl=en">@christkanimic</a></p>
+        </div>
+        
+      </div>
+    </section>
+    <footer>
+      <nav>
+        <div class="nav-links-container">
+          <ul class="nav-links">
+               <li><a href="#profile">Home</a></li>
+            <li><a href="#about">About</a></li>
+              <li><a href="#skills">Skills</a></li>
+            <li><a href="#experience">Experience</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#contact">Contacts</a></li>
+          </ul>
+        </div>
+      </nav>
+      <p>Copyright &#169; 2023 Christian Montero. All Rights Reserved.</p>
+    </footer>
+    <script src="script.js"></script>
+  </body>
+</html>

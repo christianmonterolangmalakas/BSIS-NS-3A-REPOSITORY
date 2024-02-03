@@ -1,0 +1,348 @@
+/* Add these media queries at the end of your existing CSS */
+@media screen and (max-width: 850px) {
+  .nav-links {
+    flex-direction: column;
+    gap: 0.5rem;
+    text-align: center;
+  }
+  footer {
+    height: auto;
+  }
+  footer nav {
+    height: fit-content;
+    margin-bottom: 2rem;
+  }
+  .nav-links li a {
+    font-size: 1rem;
+  }
+}
+@media screen and (max-width: 239px) {
+  /* Adjust the font size for better readability on small screens */
+  body {
+    margin-left: 40px;
+    margin-right: -25px;
+    justify-content: center;
+  }
+}
+
+
+@media screen and (max-width: 180px) {
+  
+  #profile {
+    height: auto; 
+    margin-bottom: 1rem;
+  }
+
+
+  .about-containers {
+    flex-wrap: wrap;
+  }
+
+
+  #desktop-nav {
+    display: none;
+  }
+
+  
+  #hamburger-nav {
+    display: flex;
+  }
+
+  
+  #profile,
+  .section-container {
+    display: block;
+  }
+
+ 
+  .arrow {
+    display: none;
+  }
+
+  
+  section,
+  .section-container {
+    height: fit-content;
+  }
+
+
+  section {
+    margin: 0 1rem;
+  }
+
+  
+  .section__pic-container {
+    width: auto;
+    height: 40vw;
+    justify-content: center;
+  }
+
+ 
+  .section__text__p2 {
+    font-size: 1rem;
+  }
+
+  
+  .title {
+    font-size: 1.5rem;
+    text-align: center;
+  }
+
+  .text-container {
+    text-align: justify;
+  }
+}
+
+
+@media screen and (max-width: 1400px) {
+ 
+  #profile {
+    height: auto; 
+    margin-bottom: 2rem;
+  }
+
+
+  .about-containers {
+    flex-wrap: wrap;
+  }
+}
+
+
+@media screen and (max-width: 1200px) {
+ 
+  #desktop-nav {
+    display: none;
+  }
+
+  
+  #hamburger-nav {
+    display: flex;
+  }
+
+  
+  #experience,
+  .experience-details-container {
+    margin-top: 2rem;
+  }
+
+ 
+  #profile,
+  .section-container {
+    display: block;
+  }
+
+ 
+  .arrow {
+    display: none;
+  }
+
+  
+  section,
+  .section-container {
+    height: fit-content;
+  }
+
+ 
+  section {
+    margin: 0 1rem;
+  }
+
+  
+  .section__pic-container {
+    width: 275px;
+    height: 275px;
+    margin: 0 auto 2rem;
+    justify-content: center;
+  }
+
+ 
+  .about-containers {
+    margin-top: 0;
+  }
+}
+
+
+@media screen and (max-width: 600px) {
+ 
+  #contact,
+  footer {
+    height: auto;
+  }
+
+  .skill {
+    min-width: 100%; 
+  }
+
+  .skill p {
+    font-size: 0.9rem; 
+    max-height: none; 
+  }
+
+  
+  #profile {
+    height: auto; 
+    margin-bottom: 0;
+  }
+
+  
+  article {
+    font-size: 1rem;
+  }
+
+  
+  footer nav {
+    height: fit-content;
+    margin-bottom: 2rem;
+  }
+
+  
+  .about-containers,
+  .contact-info-upper-container,
+  .btn-container {
+    flex-wrap: wrap;
+  }
+
+  
+  .contact-info-container {
+    margin: 0;
+  }
+
+  
+  .contact-info-container p,
+  .nav-links li a {
+    font-size: 1rem;
+  }
+
+  
+  .experience-sub-title {
+    font-size: 1rem;
+  }
+
+  
+  .logo {
+    font-size: 1.5rem;
+  }
+
+  
+  .nav-links {
+    flex-direction: column;
+    gap: 0.5rem;
+    text-align: center;
+  }
+
+ 
+  .section__pic-container {
+    width: auto;
+    height: 46vw;
+    justify-content: center;
+  }
+
+  
+  .section__text__p2 {
+    font-size: 1rem;
+  }
+
+  
+  .title {
+    font-size: 1.5rem;
+    text-align: center;
+  }
+
+  .text-container {
+    text-align: justify;
+  }
+}
+@media screen and (max-width: 400px) {
+  .contact-info-upper-container,
+  .contact-info-container p,
+  .contact-info-container {
+    height: fit-content;
+    margin-bottom: 2rem;
+    margin: 0;
+  }
+
+  .contact-info-container p {
+    font-size: 1rem;
+  }
+}
+@media screen and (max-width: 323px) {
+  .contact-info-container p,
+  .contact-info-container {
+    height: fit-content;
+    margin-bottom: 2rem;
+    margin: 0;
+  }
+}
+@media screen and (max-width: 248px) {
+  .project-description {
+  
+    max-height: 5rem; 
+  }
+}
+
+@media screen and (max-width: 232px) {
+  .project-description {
+    
+    max-height: 5rem; 
+  }
+}
+
+@media screen and (max-width: 197px) {
+  .project-description {
+   
+    max-height: 5rem; 
+  }
+}
+@media screen and (max-width: 182px) {
+  .project-description {
+   
+    max-height: 5rem; 
+  }
+}
+@media screen and (max-width: 249px) {
+  .project-description {
+    margin-left: 10px;
+    font-size: 0.75rem; 
+    max-height: 5rem; 
+  }
+}
+@media screen and (max-width: 235px) {
+  .project-description {
+    margin-left: 2rem;
+  
+    max-height: 6rem; 
+  }
+}
+@media screen and (max-width: 211px) {
+  .project-description {
+    margin-left: 2rem;
+    font-size: 0.75rem;
+    max-height: 6rem; 
+  }
+}
+@media screen and (max-width: 100px) {
+  .project-description {
+   
+    max-height: 5rem; 
+  }
+}
+@media screen and (max-width: 245px) {
+  .project-title {
+    margin-left: 1rem;
+    font-size: 0.75rem;
+  }
+}
+
+@media screen and (max-width: 230px) {
+  .project-title {
+    margin-left: 1rem;
+    font-size: 0.75rem;
+  }
+}
+
+@media screen and (max-width: 213px) {
+  .project-title {
+    margin-left: 2rem;
+    font-size: 0.75rem;
+  }
+}
